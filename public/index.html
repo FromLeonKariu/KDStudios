@@ -1,207 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Kariu Dev Studios</title>
-</head>
-    <body>
+  </head>
+  <body>
+ <header>
+  <nav>
+    <div class="logo-container">
+      <h3 class="logo">KD Studios</h3>
+      <span class="logo-details">
+        kariu dev <br />
+        studios
+      </span>
+    </div>
 
-        <header>
-            <nav>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#contacts">Get in touch</a></li>
+      <li>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+          Dark Mode
+        </button>
+      </li>
+    </ul>
 
-                <div class="logo-container">
-                    <h3 class="logo">KD Studios</h3><span class="logo-details">kariu dev <br> studios</span>
-                </div>
-                <ul>
-                    <li><a href="test.html">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Get in touch</a></li>
-                    <li><button id="dark-mode-toggle" class="dark-mode-toggle">Dark Mode</button></li>
-                </ul>
-                <img src="img/humburger.png" alt="logo" class="humburger-button">
 
-            </nav>
 
-        </header>
+    <button class="humburger-button" aria-label="Open menu">
+        <img src="img/menu.png" alt="menu" class="humburger-button" />
+    </button>
+  </nav>
 
-        <main>
-            <!-- CONTENT GOES HERE -->
-            <section class="hero-section">
-                    <!-- HERO SECTION GOES HERE -->
-                <div class="hero-section-left-side">
-                    <h1>We Craft <span class="hero-section-span">Stunning</span> Websites That Skyrocket Your Sales.</h1>
-                    <p class="hero-section-p">Expert web design meets cutting-edge development. We create captivating sites that convert visitors into customers. Your online success starts here.</p>
-                    <button>Book A Free Consoltation</button>
-            
-                </div>
-                <div>
-                    <img src="img/hero-image.jfif" class="hero-section-image"  alt="Hero Image">
-                </div>
-            </section>
+  <!-- ADD THIS -->
+  <div class="nav-overlay"></div>
+</header>
+    <main>
+      <!-- CONTENT GOES HERE -->
+      <section class="hero-section">
+        <!-- HERO SECTION GOES HERE -->
+        <div class="hero-section-left-side">
+          <h1>
+            We Craft <span class="hero-section-span">Stunning</span> Websites
+            That Skyrocket Your Sales.
+          </h1>
+          <p class="hero-section-p">
+            Expert web design meets cutting-edge development. We create
+            captivating sites that convert visitors into customers. Your online
+            success starts here.
+          </p>
+          <button>Book A Free Consoltation</button>
+        </div>
+        <div>
+          <img
+            src="img/hero-image.jfif"
+            class="hero-section-image"
+            alt="Hero Image"
+          />
+        </div>
+      </section>
 
-            <section>
-                <!-- Project section goes here -->
-                <h3>Some of the projects we’ve <br> completed</h3>
-                <!-- <h3>Websites for clients</h3> -->
+      <section>
+        <!-- Project section goes here -->
+        <h3>
+          Some of the projects we’ve <br />
+          completed
+        </h3>
+        <!-- <h3>Websites for clients</h3> -->
 
-                <section class="project-catalogue">
+        <section class="project-catalogue" id="pojects">
+          <div class="project">
+            <img
+              src="img/project-1.jpg"
+              alt="Project 1"
+              class="project-image"
+            />
+            <div class="project-details">
+              <h4>Coco Cola Website Redesign | UI/UX design</h4>
+              <p>Redesigning the iconic Coca Cola company’s website</p>
+              <button>View Study</button>
+            </div>
+          </div>
 
-                    <div class="project ">
-                        <img src="img/project-1.jpg" alt="Project 1" class="project-image">
-                        <div class="project-details">
-                            <h4>Coco Cola Website Redesign | UI/UX design</h4>
-                            <p>Redesigning the iconic Coca Cola company’s website</p>
-                            <button>View Study</button>
-                        </div>  
-                    </div>
+          <div class="project">
+            <img
+              src="img/project-4.jpg"
+              alt="Project 1"
+              class="project-image"
+            />
+            <div class="project-details">
+              <h4>Hello world project Stern Ritters</h4>
+              <p>Stern ritter's desctiptions for the project</p>
+              <button>View Study</button>
+            </div>
+          </div>
 
-                    <div class="project ">
-                        <img src="img/project-4.jpg" alt="Project 1" class="project-image">
-                        <div class="project-details">
-                            <h4>Hello world project Stern Ritters</h4>
-                            <p>Stern ritter's desctiptions for the project</p>
-                            <button>View Study</button>
-                        </div>  
-                    </div>
+          <div class="project grid-col-span-2 height-medium">
+            <img
+              src="img/project-6.jpg"
+              alt="Project 1"
+              class="project-image grid-col-span-2-image"
+            />
+            <div class="project-details">
+              <h4>Hello world project Stern Ritters</h4>
+              <p>Stern ritter's desctiptions for the project</p>
+              <button>View Study</button>
+            </div>
+          </div>
 
-                    <div class="project grid-col-span-2 height-medium">
-                        <img src="img/project-6.jpg" alt="Project 1" class="project-image grid-col-span-2-image">
-                        <div class="project-details">
-                            <h4>Hello world project Stern Ritters</h4>
-                            <p>Stern ritter's desctiptions for the project</p>
-                            <button>View Study</button>
-                        </div>  
-                    </div>
+          <div class="project">
+            <img
+              src="img/project-5.jpg"
+              alt="Project 1"
+              class="project-image"
+            />
+            <div class="project-details">
+              <h4>FlowRepli | customer onboarding automation | Full-stack</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolo
+              </p>
+              <button>View Study</button>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="img/project-8.jpg"
+              alt="Project 1"
+              class="project-image"
+            />
+            <div class="project-details">
+              <h4>Hello world project Stern Ritters</h4>
+              <p>Stern ritter's desctiptions for the project</p>
+              <button>View Study</button>
+            </div>
+          </div>
+        </section>
 
-                    <div class="project">
-                        <img src="img/project-5.jpg" alt="Project 1" class="project-image">
-                        <div class="project-details">
-                            <h4>Anime reccomendation webapp | Full-stack</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolo</p>
-                            <button>View Study</button>
-                        </div>  
-                    </div>
-                    <div class="project">
-                        <img src="img/project-8.jpg" alt="Project 1" class="project-image">
-                        <div class="project-details">
-                            <h4>Hello world project Stern Ritters</h4>
-                            <p>Stern ritter's desctiptions for the project</p>
-                            <button>View Study</button>
-                        </div>  
-                    </div>
-                </section>
+        <h3>Scope of our Services</h3>
 
-                <h3>Scope of our Services</h3>
+        <section class="services-catalogue" id="services">
+          <div class="services grid-col-span-2">
+            <div>
+              <h2>Wordpress <br />Development</h2>
+              <button class="button-alternative">
+                Learn More <img src="img/arrow.png"  class="arrow" alt="arrow" />
+              </button>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis
+              cumque aliquam dolor neque. Vitae accusantium officia eaque
+              molestias nemo ab ipsam et recusandae quisquam similique? Aperiam
+              sequi labore delectus.
+            </p>
+          </div>
+          <div class="services">
+            <div>
+              <h2>Web Development</h2>
+              <button class="button-alternative">
+                Learn More <img src="img/arrow.png" class="arrow"  alt="arrow" />
+              </button>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              autem reiciendis repellendus aut quos ipsa rerum suscipit
+              distinctio magni nulla as
+            </p>
+          </div>
+          <div class="services">
+            <div>
+              <h2>UI/UX Design</h2>
+              <button class="button-alternative">
+                Learn More <img src="img/arrow.png" alt="arrow" class="arrow"/></button
+              >
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              autem reiciendis repellendus aut quos ipsa rerum suscipit
+              distinctio magni nulla
+            </p>
+          </div>
+          <div class="services grid-col-span-2">
+            <div>
+              <h2>Saas <br />Development</h2>
+              <button class="button-alternative">
+                Learn More <img src="img/arrow.png"  class="arrow" alt="arrow" />
+              </button>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis
+              cumque aliquam dolor neque. Vitae accusantium officia eaque
+              molestias nemo ab ipsam et recusandae quisquam similique? Aperiam
+              sequi labore delectus.
+            </p>
+          </div>
+        </section>
+      </section>
 
-                <section class="services-catalogue">
-                    
-                    <div class="services grid-col-span-2">
-                        <div>
-                        <h2>Wordpress <br>Development</h2>
-                        <button class="button-alternative">Learn More <img src="img/arrow.png" alt="arrow"></button>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis cumque aliquam dolor neque. Vitae accusantium officia eaque molestias nemo ab ipsam et recusandae quisquam similique? Aperiam sequi labore delectus.</p>
-                    </div>
-                    <div class="services">
-                        <div>
-                        <h2>Web Development</h2>
-                        <button class="button-alternative">Learn More <img src="img/arrow.png" alt="arrow"></button>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio autem reiciendis repellendus aut quos ipsa rerum suscipit distinctio magni nulla as</p>
-                    </div>
-                    <div class="services">
-                        <div>
-                        <h2>UI/UX Design</h2>
-                        <button class="button-alternative">Learn More <img src="img/arrow.png" alt="arrow"></button>`
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio autem reiciendis repellendus aut quos ipsa rerum suscipit distinctio magni nulla </p>
-                    </div>
-                </section>
-            </section>
+      <section class="contact-section">
+        <!-- Contact section goes here -->
+        <h3 class="meta-heading">Reach out to us</h3>
+        <p class="meta-text">- And a Message from the Founder</p>
+        <div class="flex">
+          <div class="min-content">
+            <img src="img/project-7.jpg" alt="" class="contact-image" />
+            <p>
+              We'll craft stunning, results-driven website that elevate your
+              brand, attract more customers, and boost your bottom line.
+            </p>
+            <h5><span>Leon Kariu</span> - Founder of Kariu Dev Studios</h5>
+          </div>
+          <div>
+            <h4>Choose how to contact us:</h4>
+            <ul class="contact-links">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Whatsapp</a></li>
+              <li><a href="#">FaceBook</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Behance</a></li>
+            </ul>
+            <button>leave a request</button>
+          </div>
+        </div>
 
-            <section class="contact-section">
-                <!-- Contact section goes here -->
-                <h3 class="meta-heading">Reach out to us</h3>
-                <p class="meta-text"> - And a Message from the Founder</p>
-                <div class="flex">
-                    <div class="min-content">
-                        <img src="img/project-7.jpg" alt="" class="contact-image">
-                        <p>I'll craft stunning, results-driven website that elevate your brand, attract more customers, and boost your bottom line.</p> 
-                        <h5><span>Leon Kariu</span> - Founder of Kariu Dev Studios</h5>
-                    </div>
-                    <div>
-                        <h4>Choose how to contact us: </h4>
-                        <ul class="contact-links">
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Whatsapp</a></li>
-                            <li><a href="#">FaceBook</a></li>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Behance</a></li>
-                        </ul>
-                        <button>leave a request</button>
-                    </div>
-                </div>
+        <article class="discovery-call">
+          <h3>Book a 15-minutes <span>Discovery</span> call.</h3>
+          <h4>
+            Discover more about how we can help you with your design needs.
+          </h4>
+          <button class="button-alternative">Book a call!</button>
+        </article>
+      
+        <article class="social-media-links">
+        <!--  <h3>Interact</h3>
+          <h2>Other Socials</h2>
+          <div class="social-media-links">
+            <div class="social-links-container">  -->
+        <!-- <h3>Instagram</h3> -->
+        <!-- Add a svg here for the new tab arrow -->
+        <!-- </div>
 
-                <article class="discovery-call">
-                    <h3>Book a 15-minutes <span>Discovery</span> call.</h3>
-                    <h4>Discover more about how we can help you with your design needs.</h4>
-                    <button class="button-alternative">Book a call!</button>
-                </article>
-                
-                <article class="social-media-links">
-                    <h3>Interact</h3>
-                    <h2>Other Socials</h2>
-                    <div  class="social-media-links">
-                        <div class="social-links-container">
-                            <h3>Instagram</h3>
-                            <!-- Add a svg here for the new tab arrow -->
-                        </div>
-                        
-                        <div class="social-links-container">
-                            <h3>YouTube</h3>
-                            <!-- Add a svg here for the new tab arrow -->
-                        </div>
-                        
-                        <div class="social-links-container">
-                            <h3>Blog</h3>
-                            <!-- Add a svg here for the new tab arrow -->
-                        </div>
-                    </div>
+            <div class="social-links-container">
+              <h3>YouTube</h3> -->
+        <!-- Add a svg here for the new tab arrow -->
+        <!-- </div>
 
-                </article>
-            </section>
+            <div class="social-links-container"> -->
+        <!-- <h3>Blog</h3> -->
+        <!-- Add a svg here for the new tab arrow -->
+        <!-- </div>
+          </div>
+        </article> -->
+      </section>
 
-            <section>
-                <h3>Community</h3>
-                <h2>Client Testimonials</h2>
-                <div class="testimonials">
-                    <h4>John Doe</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in sit eius eum vero repudiandae. Dicta quae ut delectus atque impedit est nobis! Neque doloremque optio voluptatibus quaerat laborum libero!</p>
-                </div>
-                <div class="testimonials">
-                    <h4>John Doe</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in sit eius eum vero repudiandae. Dicta quae ut delectus atque impedit est nobis! Neque doloremque optio voluptatibus quaerat laborum libero!</p>
-                </div>
-                <div class="testimonials">
-                    <h4>John Doe</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in sit eius eum vero repudiandae. Dicta quae ut delectus atque impedit est nobis! Neque doloremque optio voluptatibus quaerat laborum libero!</p>
-                </div>
-                <div class="testimonials">
-                    <h4>John Doe</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in sit eius eum vero repudiandae. Dicta quae ut delectus atque impedit est nobis! Neque doloremque optio voluptatibus quaerat laborum libero!</p>
-                </div>
-            </section>
-        </main>
+      <h3>Community</h3>
+      <h2>Client Testimonials</h2>
+      <div
+          class="services-catalogue">
 
-        <footer>
-            <!-- FOOTER GOES HERE -->
-        </footer>
+    <div class="services">
+              <h4>John Doe</h4>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                  in sit eius eum vero repudiandae. Dicta quae ut delectus atque
+            impedit est nobis! Neque doloremque optio voluptatibus quaerat
+            laborum libero!
+        </p>
+    </div>
+    <div class="services">
+        <h4>John Doe</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            in sit eius eum vero repudiandae. Dicta quae ut delectus atque
+            impedit est nobis! Neque doloremque optio voluptatibus quaerat
+            laborum libero!
+        </p>
+    </div>
+    <div class="services">
+        <h4>John Doe</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            in sit eius eum vero repudiandae. Dicta quae ut delectus atque
+            impedit est nobis! Neque doloremque optio voluptatibus quaerat
+            laborum libero!
+        </p>
+        </div>
+        <div class="services">
+            <h4>John Doe</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                in sit eius eum vero repudiandae. Dicta quae ut delectus atque
+                impedit est nobis! Neque doloremque optio voluptatibus quaerat
+                laborum libero!
+            </p>
+        </div>
+    </div>
+    </section>
+</main>
 
-    </body>
-    
-<script src="index.js"></script>
+<footer>
+    <!-- FOOTER GOES HERE -->
+     <p>Kd Studion copyright since 2023</p>
+</footer>
+</body>
+
+  <script src="index.js"></script>
 </html>
+<a href="https://www.flaticon.com/free-icons/up-right-arrow" title="up right arrow icons">Up right arrow icons created by Elite Art - Flaticon</a>
