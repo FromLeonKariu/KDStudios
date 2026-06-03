@@ -1,15 +1,18 @@
 console.log("Hello traveller welcome to KD Studios -dark side 😂😂😂😂👌❌");
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+  const isDark = document.body.classList.contains("dark-mode");
+  localStorage.setItem("darkMode", isDark);
+  document.getElementById("dark-mode-toggle").textContent = isDark
+    ? "Light Mode"
+    : "Dark Mode";
+}
 
-const darkModeToggle = document.querySelector(".dark-mode-toggle");
-
-darkModeToggle.addEventListener("click", () => {
-  const body = document.querySelector("body");
-  body.classList.toggle("dark-mode");
-  console.log(
-    "Dark mode is now " + (body.classList.contains("dark-mode") ? "on" : "off"),
-  );
-});
-
+// Apply saved preference on page load
+if (localStorage.getItem("darkMode") === "true") {
+  document.body.classList.add("dark-mode");
+  document.getElementById("dark-mode-toggle").textContent = "Light Mode";
+}
 const hamburger = document.querySelector(".humburger-button");
 const navMenu = document.querySelector("header nav ul");
 const overlay = document.querySelector(".nav-overlay");
